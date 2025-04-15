@@ -63,10 +63,13 @@ To integrate this server with a desktop app, add the following to your app's ser
 ```json
 {
   "mcpServers": {
-    "fetch": {
+    "github.com/phillip/fetch-mcp": {
       "command": "node",
       "args": [
-        "{ABSOLUTE PATH TO FILE HERE}/dist/index.js"
+       "{ABSOLUTE PATH TO FILE HERE}/dist/index.js"
+      ],
+      "disabled": false,
+      "autoApprove": [
       ]
     }
   }
